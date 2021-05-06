@@ -4,9 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "Our Super Project",
             "type": "shell",
-            "command": "echo Hello"
+            "command": "g++",
+            "args": ["-g", "-o", "demo", "./source/main.cpp", "./source/hello.cpp"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
